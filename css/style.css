@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+nav ul li a:hover{
+    color: #777777;
+}
+
+/* Hero Section */
+
+.hero-section{
+    background: linear-gradient(to right,
+        rgba(0,0,0 , 1)
+        ,rgba(0,0,0 , 0.5)
+                    ) , url(../assets/Background.png);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+.hero-content{
+    max-width: 600px;
+    text-align: center;
+}
+
+.hero-content h1{
+    color: #ffffff;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.hero-content p{
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.hero-content button{
+    color: #ffffff;
+    background-color: #7cc576;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius:20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.hero-content button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Services */
+.services-section .container{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services-section .head-para h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.services-section .head-para p{
+    margin: 10px 0;
+}
+
+.services-container{
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-container .services-box{
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.services-box img{
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.services-box h1{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.services-box p{
+    padding: 10px 0;
+}
+
+
+/*  Working */
+/* 
+@media only screen and (max-width:768px){
+
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 30px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li{
+        margin: 10px 0;
+    }
+    
+    nav ul li a{
+        display: block;
+        width: 250px;
+        color: #ffffff;
+        padding: 20px;
+        font-size: 30px;
+        background-color: darkcyan; 
+    }
+
+} */
+
+@media only screen and (max-width:567px){
+    .hero-content h1{
+        font-size: 30px;
+    }
+
+    .hero-content p{
+        font-size: 12px;
+    }
+
+    .hero-content button{
+        font-size: 12px;
+    }
+
+    .services-section .head-para h1{
+        font-size: 30px;
+    }
+
+    .services-section .head-para p{
+        font-size: 16px;
+    }
+}
+
