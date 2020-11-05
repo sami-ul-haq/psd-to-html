@@ -7,6 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+img{
+    cursor: pointer;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -38,6 +42,10 @@ nav ul li a{
 
 nav ul li a:hover{
     color: #777777;
+}
+
+.fa-bars{
+    display: none;
 }
 
 /* Hero Section */
@@ -252,6 +260,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .sponser-list img:not(:last-of-type){
@@ -291,32 +300,22 @@ footer .container{
     margin-right: 20px;
 }
 
-
-
-
-
 /*  Working */
 @media only screen and (max-width:768px){
 
-    header{
-        position: relative;
+    .fa-bars{
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        z-index: 999;
     }
+
     nav{
-        position: absolute;
-        top: 0;
-        left: 0;
+        display: none;
     }
-
-    nav ul{
-        width: 100%;
-        height: 100%;
-        background-color: aqua;
-    }
-
-    nav ul li{
-        display: block ;
-    }
-
+        
+    /* Responsive Nav Bar HEre */
+  
 }
 
 @media only screen and (max-width:567px){
